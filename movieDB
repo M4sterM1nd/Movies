@@ -1,0 +1,47 @@
+//Create an array of movies
+var movieDB = [
+		{
+			title: "BikerBoyz",
+			rating: 10,
+			hasWatched: true
+		},
+		{
+			title: "Fantasia",
+			rating: 3,
+			hasWatched: false
+		},
+		{
+			title: "Pirates of the Carribean",
+			rating: 10,
+			hasWatched: true
+		},
+		{
+			title: "Pulp Fiction",
+			rating: 10,
+			hasWatched: true
+		},
+		{
+			title: "Beauty and the Beast",
+			rating: 5,
+			hasWatched: false
+		}
+	];
+
+//Each movie should have a title, rating, & hasWatched properties
+
+//Iterate through the array and print out:
+	//"You have watched + Movie title + Rating"
+	//"You have not watched + Movie Title + Rating"
+//var i, property;
+function listMovieRatings(arr){
+	for(var i = 0; i < arr.length; i++){
+		for(var property in arr[i]){
+			if(arr[i].property[2] === true){
+				console.log("You have watched " + arr[i].property[0] + " - " + arr[i].property[1] + " stars");
+			}
+			else if(arr[i].property[2] === false){
+				console.log("You have not watched " + arr[i].property[0] + " - " + arr[i].property[1] + " stars");
+			}
+		}
+	}
+}
